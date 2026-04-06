@@ -1,12 +1,12 @@
 # tsshape
 
-**TypeScript utilities for shaping types and data.**
+**Python tools for shaping time-series data.**
 
 ---
 
 ## About
 
-tsshape is a collection of focused TypeScript packages for transforming, validating, and composing types and data structures. Each package is small, dependency-light, and designed to work seamlessly in both Node.js and browser environments.
+tsshape is a collection of Python packages for working with time-series data — from ingestion and transformation to validation and export. Our libraries are built to be composable, lightweight, and easy to integrate into data pipelines and analysis workflows.
 
 ---
 
@@ -14,29 +14,26 @@ tsshape is a collection of focused TypeScript packages for transforming, validat
 
 | Package | Description | Version |
 |---------|-------------|---------|
-| [`@tsshape/core`](https://github.com/ts-shape/core) | Core type transformation primitives | ![npm](https://img.shields.io/npm/v/@tsshape/core) |
-| [`@tsshape/schema`](https://github.com/ts-shape/schema) | Runtime schema definition and validation | ![npm](https://img.shields.io/npm/v/@tsshape/schema) |
-| [`@tsshape/utils`](https://github.com/ts-shape/utils) | Type-safe utility helpers | ![npm](https://img.shields.io/npm/v/@tsshape/utils) |
+| [`tsshape`](https://github.com/ts-shape/tsshape) | Core time-series shaping and transformation | ![PyPI](https://img.shields.io/pypi/v/tsshape) |
+| [`tsshape-io`](https://github.com/ts-shape/tsshape-io) | Read and write time-series from common formats (CSV, Parquet, JSON) | ![PyPI](https://img.shields.io/pypi/v/tsshape-io) |
+| [`tsshape-validate`](https://github.com/ts-shape/tsshape-validate) | Schema definition and validation for time-series datasets | ![PyPI](https://img.shields.io/pypi/v/tsshape-validate) |
 
 ---
 
 ## Quick Start
 
 ```sh
-npm install @tsshape/core
+pip install tsshape
 ```
 
-```ts
-import { shape } from '@tsshape/core'
+```python
+import pandas as pd
+from tsshape import reshape
 
-const User = shape({
-  id: 'number',
-  name: 'string',
-  email: 'string',
-})
+df = pd.read_csv("sensor_data.csv", parse_dates=["timestamp"])
 
-type User = typeof User.infer
-// { id: number; name: string; email: string }
+# Resample, fill gaps, and normalize in one call
+result = reshape(df, freq="1min", fill="interpolate", normalize=True)
 ```
 
 ---
@@ -44,4 +41,4 @@ type User = typeof User.infer
 ## Links
 
 - [GitHub Repositories](https://github.com/orgs/ts-shape/repositories)
-- [npm Organization](https://www.npmjs.com/org/tsshape)
+- [PyPI](https://pypi.org/org/tsshape)

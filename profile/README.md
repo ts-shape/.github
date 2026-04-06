@@ -6,7 +6,7 @@
 
 ts-shape is a collection of Python packages for working with time-series data — from ingestion and transformation to validation and export. Our libraries are built to be composable, lightweight, and easy to integrate into data pipelines and analysis workflows.
 
-![ts-shape waveform](./banner.svg)
+![ts-shape waveform](https://raw.githubusercontent.com/ts-shape/.github/main/profile/banner.svg)
 
 ---
 

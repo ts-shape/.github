@@ -6,4 +6,4 @@ Python tools for working with time-series data — resample, normalize, validate
 pip install ts-shape
 ```
 
-[GitHub](https://github.com/ts-shape) · [PyPI](https://pypi.org/org/ts-shape)
+[GitHub](https://github.com/ts-shape) · [PyPI](https://pypi.org/project/ts-shape/)

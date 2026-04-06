@@ -1,19 +1,19 @@
-# tsshape
+# ts-shape
 
 ---
 
 ## About
 
-tsshape is a collection of Python packages for working with time-series data — from ingestion and transformation to validation and export. Our libraries are built to be composable, lightweight, and easy to integrate into data pipelines and analysis workflows.
+ts-shape is a collection of Python packages for working with time-series data — from ingestion and transformation to validation and export. Our libraries are built to be composable, lightweight, and easy to integrate into data pipelines and analysis workflows.
 
-![tsshape waveform](./banner.svg)
+![ts-shape waveform](./banner.svg)
 
 ---
 
 ## Quick Start
 
 ```sh
-pip install tsshape
+pip install ts-shape
 ```
 
 ```python
@@ -31,4 +31,4 @@ result = reshape(df, freq="1min", fill="interpolate", normalize=True)
 ## Links
 
 - [GitHub Repositories](https://github.com/ts-shape)
-- [PyPI](https://pypi.org/org/tsshape)
+- [PyPI](https://pypi.org/org/ts-shape)

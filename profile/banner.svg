@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <rect width="900" height="200" fill="#0d1117"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="50"  x2="900" y2="50"  stroke="#161b22" stroke-width="1"/>
+  <line x1="0" y1="100" x2="900" y2="100" stroke="#161b22" stroke-width="1"/>
+  <line x1="0" y1="150" x2="900" y2="150" stroke="#161b22" stroke-width="1"/>
+  <line x1="150" y1="0" x2="150" y2="200" stroke="#161b22" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="200" stroke="#161b22" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="200" stroke="#161b22" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="200" stroke="#161b22" stroke-width="1"/>
+  <line x1="750" y1="0" x2="750" y2="200" stroke="#161b22" stroke-width="1"/>
+
+  <!-- Axis -->
+  <line x1="40" y1="20" x2="40" y2="180" stroke="#30363d" stroke-width="1.5"/>
+  <line x1="40" y1="180" x2="880" y2="180" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Waveform fill (gradient area under curve) -->
+  <defs>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M40,140 C60,138 70,90 90,85 C110,80 120,120 140,118 C160,116 170,60 195,55 C220,50 230,95 250,100 C270,105 280,70 305,65 C330,60 340,105 360,108 C380,111 390,75 415,70 C440,65 450,115 470,120 C490,125 500,85 525,80 C550,75 560,130 580,135 C600,140 610,95 635,88 C660,81 670,120 690,122 C710,124 720,80 745,75 C770,70 780,110 800,112 C820,114 830,85 855,80 C870,77 875,100 880,102 L880,180 L40,180 Z"
+    fill="url(#waveGrad)"/>
+
+  <!-- Waveform line -->
+  <path d="M40,140 C60,138 70,90 90,85 C110,80 120,120 140,118 C160,116 170,60 195,55 C220,50 230,95 250,100 C270,105 280,70 305,65 C330,60 340,105 360,108 C380,111 390,75 415,70 C440,65 450,115 470,120 C490,125 500,85 525,80 C550,75 560,130 580,135 C600,140 610,95 635,88 C660,81 670,120 690,122 C710,124 720,80 745,75 C770,70 780,110 800,112 C820,114 830,85 855,80 C870,77 875,100 880,102"
+    fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Dot highlights on peaks -->
+  <circle cx="195" cy="55"  r="3.5" fill="#58a6ff"/>
+  <circle cx="305" cy="65"  r="3.5" fill="#58a6ff"/>
+  <circle cx="415" cy="70"  r="3.5" fill="#58a6ff"/>
+  <circle cx="525" cy="80"  r="3.5" fill="#58a6ff"/>
+  <circle cx="635" cy="88"  r="3.5" fill="#58a6ff"/>
+  <circle cx="745" cy="75"  r="3.5" fill="#58a6ff"/>
+
+  <!-- Label -->
+  <text x="54" y="28" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#8b949e">tsshape</text>
+  <text x="54" y="44" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10" fill="#484f58">time-series · python</text>
+</svg>

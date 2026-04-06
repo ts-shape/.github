@@ -1,7 +1,5 @@
 # tsshape
 
-**Python tools for shaping time-series data.**
-
 ---
 
 ## About
@@ -40,5 +38,5 @@ result = reshape(df, freq="1min", fill="interpolate", normalize=True)
 
 ## Links
 
-- [GitHub Repositories](https://github.com/orgs/ts-shape/repositories)
+- [GitHub Repositories](https://github.com/ts-shape)
 - [PyPI](https://pypi.org/org/tsshape)

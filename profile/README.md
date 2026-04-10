@@ -1,8 +1,8 @@
 # ts-shape
 
-Python tools for working with time-series data — resample, normalize, validate, and export with composable, lightweight packages.
+Python toolkit for industrial time-series data. Filter, transform and engineer timeseries DataFrames — built for manufacturing and IoT.
 
-```python
+```sh
 pip install ts-shape
 ```
 
